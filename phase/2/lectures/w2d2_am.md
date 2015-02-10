@@ -46,10 +46,12 @@ Demo function creation / passing / execution
 
     myArgumentIsAFunction( myCallback ); 
 
+    $('a#logout').on('click',callback); 
+
 We can save time by using an anonymous function for non logic heavy or complex actions.
 
-    function myArgumentIsAnAnonymousFuncion( function(){
-      $('.btn-container').append( "<div class='hello'>Hello Squirrels 2015</div>" );
+    $('a#logout').on('click',function(){
+        console.log('I was clicked');
     });
 
 :When should we use a named function vs. an Anonymous function?:
